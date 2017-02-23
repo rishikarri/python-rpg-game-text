@@ -10,6 +10,14 @@ class Character(object):
 	def say_hi(self):
 		print "Hello, my name is %s" % (self.name)
 
+	# when you pass self to is alive youa re passing the whole self object
+	def is_alive(self):
+		if self.health > 0:
+			return True
+		else:
+			return False 
+
+
 
 # now let's try making an actual character and passing it the correct parameters 
 
